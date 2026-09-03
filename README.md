@@ -45,3 +45,41 @@ C = (N ** 3).reshape(10,10)
 div_by_4 = C[C % 4 == 0]
 
 print(C.shape)
+print(div_by_4)
+print(div_by_4.size)
+
+np.save("div_by_4.npy", div_by_4)
+‘’’
+# **C. Above-mean Squares Problems**
+
+Create a 6 x 6 array containing the squares of numbers from 1 to 36, calculate its mean, and select only the values greater than the mean.
+
+The functions used in this problem are the following :
+- ‘(np.arange(1,37) ** 2).reshape(6,6) - This squares the numbers 1 to 36 and shapes them into a 6 x 6 array.
+- ‘S.mean()’ - Calculates the mean of the array.
+- ‘S[S > S_mean] - This Filters the values that are greater than the mean
+
+‘’’python
+S = (np.arange(1,37) ** 2).reshape(6,6)
+S_mean = S.mean()
+
+above_mean = S[S > S_mean]
+
+print(S)
+print(S_mean)
+print(above_mean)
+print(above_mean.size)
+
+np.save(“above_mean.npy”, above_mean)
+‘’’
+
+I appreciate that you read this.
+
+Click the link below to see the full main python program:
+
+
+# **Readme File Version History:**
+
+September 3, 2026 - initial Readme Content uploaded
+
+September 3, 2026 - final Readme Content uploaded
