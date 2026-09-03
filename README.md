@@ -77,6 +77,7 @@ I appreciate that you read this.
 
 Click the link below to see the full main python program:
 
+https://github.com/charlescarmona/ECE-2112-PA-2/blob/main/ProgrammingAssignment2.ipynb
 
 # **Readme File Version History:**
 
