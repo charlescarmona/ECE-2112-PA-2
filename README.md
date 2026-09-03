@@ -15,7 +15,7 @@ The functions used for this are the following;
 - `(X - X.mean()) / X.std()` - This one normalizes the array
 - `np.save()` - This saves the array as an `.npy` file
 
-```python
+``` python
 import numpy as np
 np.random.seed(2112)
 X = np.random.randint(10,101, size=(5, 5))
