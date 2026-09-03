@@ -15,7 +15,7 @@ The functions used for this are the following;
 - `(X - X.mean()) / X.std()` - This one normalizes the array
 - `np.save()` - This saves the array as an `.npy` file
 
-``` python
+```python
 import numpy as np
 np.random.seed(2112)
 X = np.random.randint(10,101, size=(5, 5))
@@ -34,11 +34,11 @@ np.save(“X_normalized.npy”, X_normalized)
 Create n array of the first positive 100 integers then cube each value. The integers will be then reshaped into a 10x10 array and the only number that are divisible by 4 will be selected.
 
 The functions used in this problem are the following:
-- ‘np.arange(1,10)’ - This Creates an array from 1 to 100.
-- ‘(N ** 3).reshape(10,10)’ - This is responsible for cubing and reshaping the array into 10 rows and columns.
-- ‘C[C % 4 == 0]’ - This filters and returns the values that satisfies the condition.
+- `np.arange(1,10)` - This Creates an array from 1 to 100.
+- `(N ** 3).reshape(10,10)` - This is responsible for cubing and reshaping the array into 10 rows and columns.
+- `C[C % 4 == 0]` - This filters and returns the values that satisfies the condition.
 
-‘’’python
+```python
 N = np.arange(1,101)
 C = (N ** 3).reshape(10,10)
 
@@ -49,17 +49,17 @@ print(div_by_4)
 print(div_by_4.size)
 
 np.save("div_by_4.npy", div_by_4)
-‘’’
+```
 # **C. Above-mean Squares Problems**
 
 Create a 6 x 6 array containing the squares of numbers from 1 to 36, calculate its mean, and select only the values greater than the mean.
 
 The functions used in this problem are the following :
-- ‘(np.arange(1,37) ** 2).reshape(6,6) - This squares the numbers 1 to 36 and shapes them into a 6 x 6 array.
-- ‘S.mean()’ - Calculates the mean of the array.
-- ‘S[S > S_mean] - This Filters the values that are greater than the mean
+- `(np.arange(1,37) ** 2).reshape(6,6)` - This squares the numbers 1 to 36 and shapes them into a 6 x 6 array.
+- `S.mean()` - Calculates the mean of the array.
+- `S[S > S_mean]` - This Filters the values that are greater than the mean
 
-‘’’python
+```python
 S = (np.arange(1,37) ** 2).reshape(6,6)
 S_mean = S.mean()
 
@@ -71,7 +71,7 @@ print(above_mean)
 print(above_mean.size)
 
 np.save(“above_mean.npy”, above_mean)
-‘’’
+```
 
 I appreciate that you read this.
 
